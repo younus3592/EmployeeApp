@@ -1,0 +1,18 @@
+﻿@model Employee
+
+<tr id="tr_@Model.EmployeeID">
+    <td>@Model.EmployeeName</td>
+    <td>@Model.Age</td>
+    <td>@Model.Gender</td>
+    <td>@Model.Address</td>
+    <td>
+        <a class="btn btn-primary" onclick="employeeEditorApp.openEmployeeEditorModel(@Model.EmployeeID)">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            Edit
+        </a>
+        <a class="btn btn-danger" onclick="employeeEditorApp.DeleteEmployee(@Model.EmployeeID)">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"> </span>
+            Delete
+        </a>
+    </td>
+</tr>
