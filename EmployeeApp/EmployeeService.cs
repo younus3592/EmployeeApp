@@ -73,9 +73,6 @@ namespace EmployeeApp
                 return null;
             }
         }
-        public void DummyMethod()
-        {
-
-        }
+       
     }
 }
