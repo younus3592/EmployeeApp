@@ -8,6 +8,7 @@ namespace EmployeeApp
     public class EmployeeService
     {
         EmployeesDBEntities dBEntities = new EmployeesDBEntities();
+
         public IList<Employee> GetEmployeesList()
         {
             return dBEntities.Employees.ToList();
@@ -71,6 +72,10 @@ namespace EmployeeApp
             {
                 return null;
             }
+        }
+        public void DummyMethod()
+        {
+
         }
     }
 }
